@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inferior Silesia Canis</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
+    <a href='https://pngtree.com/so/fresh-leaves'>fresh leaves png from pngtree.com</a>
+  --></head>
+  <body>
+    <div class="menu menu-nonactive">
+      <a href="index.html"><div class="nav-element">Home</div></a>
+      <a href="our-bostons.html"><div class="nav-element">Our bostons</div></a>
+      <a href="gallery.html"><div class="nav-element">Gallery</div></a>
+      <a href="contact.html"><div class="nav-element">Contact</div></a>
+      <a href="https://www.instagram.com/bostonterrier_cutesy/"
+        ><div class="nav-element">Instagram</div></a
+      >
+      <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element">Facebook</div></a>
+    </div>
+    <div class="all all-hide">
+      <div class="container" style="margin: 0px; padding: 0px">
+        <header>
+          <a href="index.html">
+            <img
+              class="logo"
+              src="logos/logo.png"
+              alt="Logo Inferior Silesia Canis"
+            />
+          </a>
+          <img class="phone-icon" src="icons/phone.png" alt="Contact" />
+          <div class="menu-icon" onclick="openNav()">
+            <div class="menu-icon-element icon-change"></div>
+            <div class="menu-icon-element"></div>
+            <div class="menu-icon-element"></div>
+            <div class="menu-icon-element icon-change"></div>
+          </div>
+          <div class="header-icons">
+            <div class="header-icon fb-icon">
+              <a href="https://www.facebook.com/alex.leenek"
+                ><img src="icons/facebook.png" alt="Facebook"
+              /></a>
+            </div>
+            <div class="header-icon insta-icon">
+              <a href="https://www.instagram.com/bostonterrier_cutesy/"
+                ><img src="icons/instagram.png" alt="Instagram"
+              /></a>
+            </div>
+            <div class="header-icon mail-icon">
+              <a href="mailto: linek.aleksandra@gmail.com"
+                ><img src="icons/mail.png" alt="Mail us"
+              /></a>
+            </div>
+            <div class="header-icon tel-icon">
+              <a href="tel: 500-083-369"
+                ><img src="icons/phone.png" alt="Phone us"
+              /></a>
+            </div>
+          </div>
+        </header>
+        <div class="web-space-nav">
+          <button id="show-menu">Menu</button>
+        </div>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-bostons.html">Our bostons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/bostonterrier_cutesy/">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/inferiorsilesiacanis/">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="content">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="slider_gallery/1.png"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="slider_gallery/4a.png"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="slider_gallery/5.jpg"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="slider_gallery/6.jpg"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+          <div class="welcome">
+            <h3 id="welcome-title-web">Inferior Silesia Canis Welcomes You!</h3>
+          
+            <div class="line"></div>
+            <div class="about-us">
+              
+                <img class="about-img"  src="aboutus_main.jpg" alt="Me and bostons" />
+           
+        
+                <h2 id="about-title">About us</h2>
+                <p>
+                  Highly professional environment, but still a home for all our
+                  animals. We see them and look after them as members of our
+                  extended family. <br /><br />
+                  Big attention is given to selection of puppies due to the FCI
+                  standard; as we constantly seek to improve the breed, in each
+                  litter we will have 1-2 exhibition puppies at the best. In our
+                  kennel, we look on quality of show dogs and not quantity of
+                  them, we aim to dogs with ISC had their type of beauty very
+                  reminiscent of that from the pattern (nice and inteligent
+                  expression, with dark round eyes, small or medium size, level
+                  topline and very elegant in static and movement), regardless
+                  of whether they will be – show dog or just the companion
+                  family dogs. <br /><br />
+                  Good looks are not everything, and all our dogs are tested for
+                  diseases that affect breed – eyes disease including JHC,
+                  patella and spine problems, BEAR. However it is still possible
+                  that puppies from healthy (even champion) parents have some
+                  health issues. Therefore, we examine our dogs to prevent the
+                  breeding of affected individuals, and, we believe, with each
+                  generation there is less risk of the disease. After a few
+                  dozen or so generations, it may be possible to minimalize
+                  certain diseases just by proper selection. About bostons
+                  diseases you can read at Boston Terrier Club of America
+                  website: <a href="https://www.bostonterrierclubofamerica.org/boston-terrier-health/Boston-Terrier-Health-Links.htm?fbclid=IwAR1Z3V3GRjBn3Nvh9BE5VJAhxe9KVb6eNFtuiYiIyq8dA16Qp4ohJn6mews">here</a> <br /><br /></p>
+                  <img class="about-img2 " src="run.jpg" alt="Bostons">
+                  <p>
+                  As essential part of our philosophy, we don’t focus only on
+                  appearance and health, but we invest a lot is socialisation as
+                  well. Rather than training, we like to refer to it as
+                  education. Being an owner and trainer of school for dogs, I
+                  personally recognise importance of natural approach to
+                  puppies, something that is confirmed by many of happy owners
+                  of happy puppies. Also we do early neurological stimulation
+                  about which, you can read <a href="http://www.breedingbetterdogs.com/article/early-neurological-stimulation?fbclid=IwAR0vTE1aRmfPp5LzVIDmRFVmhgdXeHuuAGFbyQu9V0alvQDXYjprIP6Z7dE">here</a>. 
+                  <br /><br />
+                  All of our dogs are on the raw food diet, where there is no
+                  processed foods, the most healthy and natural diet for dogs.
+                  As responsible breeders, we are keen that even when they leave
+                  our home, our dogs are still being looked after in the same
+                  manner, and we welcome any diet inquiries and questions from
+                  future prospective owners.Looks, health, upbringing,
+                  temperament and diet – for us is a package, all or nothing –
+                  we stand behind our exceptional results.Every puppy from our
+                  kennel receives birth certificate, personalized document
+                  folder and heathbook, passport booklet, chip, pedigree copies
+                  and health tests copies of parents and layette. <br /><br /></p>
+                  <img class="about-img about-img3" src="leo_puppy.jpg" alt="Bostons">
+                  <p>
+                  By choosing the puppy from ISC you join our family. What does
+                  it mean? Just that before buying a dog we will invite you for
+                  a visit and that after we will stay in touch for a long time
+                  as well as meet on various occasions. We hope, with time, to
+                  build a friendship. Raising a healthy puppy is a lot of
+                  dedicated work, and we like to stay in touch with new owners,
+                  as a friends, or simply as interested party. Meetings and
+                  pictures of canine members of your family is something we look
+                  forward. That makes parting from them easier. On our part, we
+                  guarantee lifetime of support, advising and recommendations
+                  for your pets wellbeing. Since Boston Terriers are still a
+                  rare breed in europe, not every vet is fully competent, so
+                  this is another example of how our bond will benefit you.
+                  <br /><br />
+                  And remember, Bostons are born athletes; they thrive on
+                  sports, being Frisbee, flyball, catch, agility, puller,
+                  nosework or any other outdoor activity will make them as happy
+                  as they can be! We urge you to offer them more than a couch,
+                  allow them to enjoy life and your company in fullest!
+                  <br /><br />
+                  I feel you got a good picture of who we are and what we do. If
+                  you are still interested in meeting us and our canine family,
+                  and share our values and passion, kindly drop a few lines
+                  about yourselves and let us know when can we welcome you!
+                </p>
+              </div>
+            </div>
+                <img class="down" src="icons/down.png" alt="More" />
+                <img class="top" src="icons/down.png" alt="More" />
+                <script>
+                const button = document.querySelector(".down");
+                const buttonTop = document.querySelector(".top");
+                const text = document.querySelector(".about-us");
+
+                button.addEventListener("click", () => {
+                  text.classList.toggle("abouttext-active");
+                  button.classList.toggle("down-none");
+                  buttonTop.classList.toggle("top-active");
+                });
+                buttonTop.addEventListener("click", () => {
+                  text.classList.toggle("abouttext-active");
+                  button.classList.toggle("down-none");
+                  buttonTop.classList.toggle("top-active");
+                });
+                </script>
+                <div class="line"></div>
+              
+      
+          <div class="end-main-text">
+            <div class="loki-dog">
+              <img src="loki.png" alt="Photo of Loki" />
+            </div>
+            <div class="near-loki-dog">
+              <a href="contact.html"><span class="contact-us-end">Contact us!</span></a>
+              <div class="end-icons">
+                <div class="end-icon">
+                  <a href="https://www.facebook.com/alex.leenek"
+                    ><img src="icons/facebook.png" alt="Facebook"
+                  /></a>
+                </div>
+                <div class="end-icon">
+                  <a href="https://www.instagram.com/bostonterrier_cutesy/"
+                    ><img src="icons/instagram.png" alt="Instagram"
+                  /></a>
+                </div>
+                <div class="end-icon">
+                  <a href="mailto: linek.aleksandra@gmail.com"
+                    ><img src="icons/mail.png" alt="Mail us"
+                  /></a>
+                </div>
+                <div class="end-icon">
+                  <a href="tel: 500-083-369"
+                    ><img src="icons/phone.png" alt="Phone us"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="map-container-google-1"
+            class="z-depth-1-half map-container"
+            style="height: 500px"
+          >
+            <iframe
+              src="https://maps.google.com/maps?q=trzebnica&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <footer>
+            <p>
+              ©2021 by
+              <span class="inferior-footer">Inferior Silesia Canis</span> <br />
+              Icons made by
+              <a
+                href="https://www.flaticon.com/authors/dave-gandy"
+                title="Dave Gandy"
+                >Dave Gandy</a
+              >
+              from
+              <a href="https://www.flaticon.com/" title="Flaticon"
+                >www.flaticon.com</a
+              >
+            </p>
+          </footer>
+        </div>
+      </div>
+      <div id="side-nav">
+        <img
+          class="logo-nav"
+          src="logos/logo2.png"
+          alt="Logo Inferior Silesia Canis"
+        />
+        <img
+          class="exit-icon"
+          src="icons/exit.png"
+          alt="Exit icon"
+          onclick="closeNav()"
+        />
+        <a href="index.html"><div class="nav-element side-nav-el">Home</div></a>
+        <a href="our-bostons.html"
+          ><div class="nav-element side-nav-el">Our bostons</div></a
+        >
+        <a href="gallery.html"><div class="nav-element side-nav-el">Gallery</div></a>
+        <a href="contact.html"><div class="nav-element side-nav-el">Contact</div></a>
+        <a href="https://www.instagram.com/bostonterrier_cutesy/"
+          ><div class="nav-element side-nav-el">Instagram</div></a
+        >
+        <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element side-nav-el">Facebook</div></a>
+      </div>
+    </div>
+    <script>
+        const btn = document.querySelector("#show-menu");
+      const menu = document.querySelector(".menu");
+      const container = document.querySelector(".all");
+      const hideMe = document.querySelector(".content");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("menu-active");
+        menu.classList.toggle("menu-nonactive");
+        container.classList.toggle("all-active");
+        container.classList.toggle("all-hide");
+      });
+      const containerHidden = document.querySelector(".all-active");
+      hideMe.addEventListener("click", () => {
+        container.classList.add("all-hide");
+        menu.classList.remove("menu-active");
+        menu.classList.add("menu-nonactive");
+        container.classList.remove("all-active");
+      });
+    </script>
+  </body>
+</html>
